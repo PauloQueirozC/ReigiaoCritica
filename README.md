@@ -1,2 +1,3 @@
 # ReigiaoCritica
-Nesse projeto e analisado e resolvido um exemplo simples de um problema de uma região critica 
+  Nesse projeto e analisado e resolvido um exemplo simples de um problema de uma região critica. O problema consta de uma geladeira com leite que e esvaziada por uma função "BebeLeite" e se não estiver cheia 3 entidades, Pai, Mãe e Tio, compram mais. Nesse caso temos um problema de região critica, pois quando as 3 threads tentarem analisar a quantidade de leite iram comprar leita a mais do que a eladeira suporta. 
+  Para evitar isso foi criado um semafaro para cada uma das 3 threads de tal forma que apenas uma execute de cada vez, fazendo com que cada uma tenha sua vez na região critica. Assim, nao temos mais o caso de duas thread tentarem ler e escrever no mesmo local de memoria ao mesmo tempo.
